@@ -1,0 +1,72 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    margin: 2% 5%;
+    width: 90%;
+}
+form {
+    height: 75px;
+    width: 100%;
+    font-size: 34px;
+    border: 0.25px solid #d3d3d3;
+}
+#dish-name:hover {
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+#form-cont {
+    width: 60%;
+    display: flex;
+    gap: 2%;
+    margin: 1% auto;
+}
+#dish-name {
+    width: 90%;
+    height: 45px;
+    font-size: 32px;
+    padding: 0% 5%;
+}
+#dish-name:focus {
+    outline: 0;
+}
+#search-cont {
+    position: absolute;
+    top: 20.35%;
+    right: 35.18%;
+    width: 635.6px;
+    background-color: white;
+    max-height: 500px;
+    border: 1px solid black;
+    border-top: none;
+    display: none;
+}
+#search-cont > div {
+    padding: 0.5rem 2.5rem;
+}
+#search-cont > div:hover {
+    background-color: honeydew;
+    cursor: pointer;
+}
+#search {
+    border-radius: 10px;
+    padding: 1% 5%;
+    height: 50px;
+    background-color: white;
+    border: 1px solid green;
+    font-size: 26px;
+}
+#search:hover, .dish-card > button:hover {
+    box-shadow: 0px 3px 3px 3px rgba(0, 100, 0, 0.2);
+    cursor: pointer;
+}
+#container {
+    border: 0.5px solid #c3c3c3;
+    border-top: none;
+    width: 90%;
+    padding: 0% 5%;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+

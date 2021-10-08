@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food App - Search Recipes</title>
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles//search.css">
+    <link rel="stylesheet" href="./styles/dish-card.css">
 </head>
 <body>
     <nav>
     </nav>
     <main>
+        <form id="search-bar">
+            <div id="form-cont">
+                <input type="text" name="dish" id="dish-name" placeholder="type the dish name" autocomplete="off">
+                <div id="search-cont"></div>
+                <input type="button" value="Search" id="search">
+            </div>
+            
+        </form>
+        <div id="container">
 
+        </div>
     </main>
     <script src="./scripts/search.js" type="module"></script>
 </body>
