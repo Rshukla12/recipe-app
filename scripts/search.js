@@ -87,7 +87,7 @@ function handleKeyPress(){
 
 
 window.addEventListener( "load", () => {
-    document.querySelector("nav").innerHTML = navbar( { title: "Search Recipes" } );
+    document.querySelector("nav").innerHTML = navbar( { title: "Search Recipes", id: 0 } );
     const inp = document.getElementById("dish-name");
     const btn = document.getElementById("search");
     inp.onkeydown = handleKeyPress();

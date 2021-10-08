@@ -18,12 +18,15 @@
 }
 #navbar > .left {
     width: 20%;
+    display: flex;
     margin-left: 2%;
 }
 .link {
-    padding: 2% 5%;
+    width: 33.33%;
+    padding: 1.5% 0%;
+    text-align: center;
 }
-.link:hover {
+.link:hover, .active {
     background-color: honeydew;
     cursor: pointer;
 }
