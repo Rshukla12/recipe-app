@@ -2,3 +2,13 @@
     margin: auto;
     margin-top: 2%;
 }
+.new-cont > div {
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+.new-cont img {
+    width: 50%;
+    height: 50%;
+    max-width: 400px;
+}
