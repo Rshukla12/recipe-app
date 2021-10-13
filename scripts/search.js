@@ -1,5 +1,5 @@
 import navbar from "../components/navbar.js";
-import createDishCard from "../components/dishCard.js";
+import displaySearch from "../components/displayCard.js";
 
 function fetchDishes(q){
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${q}`;
@@ -9,26 +9,13 @@ function fetchDishes(q){
 }
 
 
-
-function displaySearch(dishes){
-    const container = document.getElementById("container");
-    container.innerHTML = null;
-    let frag = new DocumentFragment();
-    for ( const dish of dishes ){
-        const div = createDishCard(dish);
-        frag.append(div);
-    }
-    container.append(frag);
-}
-
-
 async function handleSearch(){
     try {
         event.preventDefault();
         document.getElementById("search-cont").style.display = "none";
         const q = document.getElementById("dish-name").value;
         const {meals:res} = await fetchDishes(q);
-        displaySearch(res);
+        displaySearch(res, "container");
     } catch ( err ){
         console.log(err);
     };
