@@ -1,6 +1,6 @@
 const navbar = ( {title="Title", id=0} ) => {
     let searchActive = "", recipeActive = "", latestActive = "";
-    let searchLink = "'./search.html'", recipeLink = "'./todays_special.html'", latestLink = "'./latest.html'";
+    let searchLink = "'./search.html'", recipeLink = "'./todays_special.html'", latestLink = "'./index.html'";
     switch ( id ){
         case ( 0 ):
             searchActive = "active";
@@ -24,7 +24,7 @@ const navbar = ( {title="Title", id=0} ) => {
                     <div class="link ${recipeActive}" onclick="javascript:location.href=${recipeLink}">Recipe of the day</div>
                     <div class="link ${latestActive}" onclick="javascript:location.href=${latestLink}">Latest Recipes</div>
                 </div>
-            </div>`
+            </div>`;
 }
 
 export default navbar;
